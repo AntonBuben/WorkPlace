@@ -8,7 +8,12 @@ import by.anton.exercises.chapter_2.*;
 public class RunExercisesC1 {
     private int chapter, exercise;
 
-    public void setExercises() {
+    public RunExercisesC1() {
+        this.setExercises();
+        this.runExercises();
+    }
+
+    private void setExercises() {
         //Set the chapter and the exercise.
         ChoiceOfExerciseC1 choice = new ChoiceOfExerciseC1();
         choice.setExercise();
@@ -16,7 +21,7 @@ public class RunExercisesC1 {
         this.exercise = choice.getExercise();
     }
 
-    public void runExercises() {
+    private void runExercises() {
         //Run the exercise
         switch (this.chapter) {
             case 1:

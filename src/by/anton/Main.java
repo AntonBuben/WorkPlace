@@ -8,10 +8,9 @@ import by.anton.exercises.chapter_1.RunExercisesC1;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
-        RunExercisesC1 run = new RunExercisesC1();
-        run.setExercises();
-        run.runExercises();
+	// do exercises
+        new RunExercisesC1();
+
      //String urlInfo = "${info}";
 //        /*for (int i = 0; i < ; i++) {
 //
