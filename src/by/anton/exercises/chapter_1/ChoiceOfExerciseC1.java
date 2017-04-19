@@ -1,11 +1,11 @@
-package by.anton;
+package by.anton.exercises.chapter_1;
 
 import java.util.Scanner;
 
 /**
  * Created by Buben_AV on 22.03.2017.
  */
-public class ChoiceOfExercise {
+public class ChoiceOfExerciseC1 {
     private int chapter, exercise;
 
     public int getChapter() {

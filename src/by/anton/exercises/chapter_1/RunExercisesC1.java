@@ -1,17 +1,16 @@
-package by.anton;
+package by.anton.exercises.chapter_1;
 
-import by.anton.exercises.chapter_1.*;
 import by.anton.exercises.chapter_2.*;
 
 /**
  * Created by Buben_AV on 22.03.2017.
  */
-public class RunExercises {
+public class RunExercisesC1 {
     private int chapter, exercise;
 
     public void setExercises() {
         //Set the chapter and the exercise.
-        ChoiceOfExercise choice = new ChoiceOfExercise();
+        ChoiceOfExerciseC1 choice = new ChoiceOfExerciseC1();
         choice.setExercise();
         this.chapter = choice.getChapter();
         this.exercise = choice.getExercise();
