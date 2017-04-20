@@ -6,7 +6,7 @@ import java.util.Scanner;
  * Created by Buben_AV on 22.03.2017.
  */
 public class Exercise_1_2 {
-    String name;
+    private String name;
 
     public Exercise_1_2() {
         this.setName();

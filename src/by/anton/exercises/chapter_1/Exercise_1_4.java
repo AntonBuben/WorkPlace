@@ -6,8 +6,8 @@ import java.util.Scanner;
  * Created by Buben_AV on 22.03.2017.
  */
 public class Exercise_1_4 {
-    String password;
-    final String PASSWORD = "da";
+    private String password;
+    private final String PASSWORD = "da";
 
     public Exercise_1_4() {
         this.setName();
