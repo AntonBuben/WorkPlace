@@ -1,6 +1,9 @@
 package by.anton;
 
+import by.anton.exercises.Choice;
 import by.anton.exercises.chapter_1.RunExercisesC1;
+
+import java.util.Scanner;
 
 /**
  * Created by Buben_AV on 22.03.2017.
@@ -9,12 +12,14 @@ public class Main {
 
     public static void main(String[] args) {
 	// do exercises
-        new RunExercisesC1();
+        Choice choice = new Choice();
+            switch (choice.getChapter()){
+                case 1: new RunExercisesC1(choice); break;
+//                case 2: new RunExercisesC2(choice); break;
+//                case 3: new RunExercisesC3(choice); break;
+            }
 
-     //String urlInfo = "${info}";
-//        /*for (int i = 0; i < ; i++) {
-//
-//        }*/
 
+     //PS String urlInfo = "${info}";
     }
 }

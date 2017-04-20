@@ -1,5 +1,6 @@
 package by.anton.exercises.chapter_1;
 
+import by.anton.exercises.Choice;
 import by.anton.exercises.chapter_2.*;
 
 /**
@@ -8,15 +9,13 @@ import by.anton.exercises.chapter_2.*;
 public class RunExercisesC1 {
     private int chapter, exercise;
 
-    public RunExercisesC1() {
-        this.setExercises();
+    public RunExercisesC1(Choice choice) {
+        this.setExercises(choice);
         this.runExercises();
     }
 
-    private void setExercises() {
+    private void setExercises(Choice choice) {
         //Set the chapter and the exercise.
-        ChoiceOfExerciseC1 choice = new ChoiceOfExerciseC1();
-        choice.setExercise();
         this.chapter = choice.getChapter();
         this.exercise = choice.getExercise();
     }
