@@ -5,17 +5,17 @@ import java.util.Random;
 /**
  * Created by Anton on 22.04.2017.
  */
-public class Array {
+public class ArrayForExercises {
     private int arr[];
-    private int COUNT = 10;
-    public Array() {
+    private int COUNTS = 10;
+    public ArrayForExercises() {
         this.setArray();
         this.printArray();
 
     }
 
     public void setArray() {
-        this.arr = new int[COUNT];
+        this.arr = new int[COUNTS];
         Random random = new Random();
         for (int i: this.arr){
             arr[i] = random.nextInt(100);
@@ -28,7 +28,7 @@ public class Array {
             System.out.print(this.arr[i]+" ");
         }
     }
-    public int[] getArr() {
+    public int[] getArray() {
         return arr;
     }
 }
