@@ -6,6 +6,7 @@ import java.util.Scanner;
  * Created by Buben_AV on 22.03.2017.
  */
 public class Exercise_1_4 {
+    private final String TASK = "#4 Ввести пароль из командной строки и сравнить его со строкой-образцом.";
     private String password;
     private final String PASSWORD = "da";
 

@@ -7,6 +7,7 @@ import java.util.Scanner;
  * Created by Buben_AV on 22.03.2017.
  */
 public class Exercise_1_3 {
+    private final String TASK = "#3 Вывести заданное количество случайных чисел с переходом и без перехода на новую строку.";
     private int number;
 
     public Exercise_1_3() {

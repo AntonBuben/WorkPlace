@@ -7,6 +7,7 @@ import java.util.Scanner;
  * Created by Buben_AV on 22.03.2017.
  */
 public class Exercise_1_5 {
+    private final String TASK = "#5 Ввести целые числа как аргументы командной строки, подсчитать их сум мы (произведения) и вывести результат на консоль.";
     private int number;
 
     public Exercise_1_5() {

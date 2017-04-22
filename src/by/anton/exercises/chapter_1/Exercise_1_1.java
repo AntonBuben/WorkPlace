@@ -6,6 +6,7 @@ import java.util.Scanner;
  * Created by Buben_AV on 22.03.2017.
  */
 public class Exercise_1_1 {
+    private final String TASK = "#1 Приветствовать любого пользователя при вводе его имени через командную строку.";
     private String name;
 
     public Exercise_1_1() {
