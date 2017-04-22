@@ -4,7 +4,8 @@ package by.anton.exercises.chapter_2;
  * Created by Buben_AV on 22.03.2017.
  */
 public class Exercise_2_1 {
-    private final String TASK = "#1 Ввести с консоли n целых чисел. На консоль вывести: Четные и нечетные числа.";
+    private final String TASK = "#1 Найти самое короткое и самое длинное число. Вывести найденные числа\n" +
+            "и их длину.";
     private int arr[];
 
     public Exercise_2_1() {
@@ -14,26 +15,26 @@ public class Exercise_2_1 {
         int num, counts;
         num = numberMax();
         counts = getCountsOfDigits(num);
-        System.out.println("Number max :"+num+"Counts : "+counts);
+        System.out.println("Number max :"+num+" Counts : "+counts);
         num = numberMin();
         counts = getCountsOfDigits(num);
-        System.out.println("Number max :"+num+"Counts : "+counts);
+        System.out.println("Number max :"+num+" Counts : "+counts);
 
     }
     public int numberMax(){
-        int max = 0;
+        int max = arr[0];
         for (int i : arr){
-            if (arr[i] > max){
-                max = arr[i];
+            if (i > max){
+                max = i;
             }
         }
         return max;
     }
     public int numberMin(){
-        int min = 2147483647;
+        int min = Integer.MAX_VALUE;
         for (int i : arr){
-            if (arr[i] < min){
-                min = arr[i];
+            if (i < min){
+                min = i;
             }
         }
         return min;

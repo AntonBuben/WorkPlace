@@ -7,7 +7,7 @@ import java.util.Random;
  */
 public class ArrayForExercises {
     private int arr[];
-    private int COUNTS = 10;
+    private int COUNT = 10;
     public ArrayForExercises() {
         this.setArray();
         this.printArray();
@@ -15,18 +15,19 @@ public class ArrayForExercises {
     }
 
     public void setArray() {
-        this.arr = new int[COUNTS];
+        this.arr = new int[COUNT];
         Random random = new Random();
-        for (int i: this.arr){
+        for (int i=0; i<COUNT; i++){
             arr[i] = random.nextInt(100);
         }
     }
 
     public void printArray() {
         System.out.println("The array : ");
-        for (int i : this.arr){
-            System.out.print(this.arr[i]+" ");
+        for (int elem : arr){
+            System.out.print(elem+" ");
         }
+        System.out.println();
     }
     public int[] getArray() {
         return arr;

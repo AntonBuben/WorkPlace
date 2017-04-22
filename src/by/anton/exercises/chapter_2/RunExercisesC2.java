@@ -5,9 +5,9 @@ import by.anton.exercises.Choice;
 /**
  * Created by Anton on 22.04.2017.
  */
-public class RunExerciseC2 {
+public class RunExercisesC2 {
     private int chapter, exercise;
-    public RunExerciseC2(Choice choice) {
+    public RunExercisesC2(Choice choice) {
         this.setExercises(choice);
         this.runExercises();
     }
@@ -50,6 +50,6 @@ public class RunExerciseC2 {
             default:
                 System.out.println("No exercise!");
         }
-        System.out.println("Chapter" + this.chapter + "done!");
+        System.out.println("Chapter " + this.chapter + " done!");
     }
 }
