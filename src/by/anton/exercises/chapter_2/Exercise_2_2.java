@@ -21,11 +21,10 @@ public class Exercise_2_2 {
         for (int i = 0; i < this.arr.length; i++){
             arr[i]=String.valueOf(Math.abs(this.arr[i])).length();
         }
-        for (int i = 0; i <arr.length ; i++) {
-            int temp = 0;
-            for (int j = 0; j < arr.length-1 ; j++) {
+        for (int i = arr.length-1; i >=0 ; i--) {
+            for (int j = 0; j < i ; j++) {
                 if (arr[j]>arr[j+1]){
-                    temp = arr[j];
+                    int temp = arr[j];
                     arr[j]=arr[j+1];
                     arr[j+1]=temp;
                 }
