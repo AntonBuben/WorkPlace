@@ -7,18 +7,26 @@ import java.util.Random;
  */
 public class ArrayForExercises {
     private int arr[];
-    private int COUNT = 10;
+    private final int COUNT = 10;
     public ArrayForExercises() {
-        this.setArray();
+        this.setArrayRandom();
         this.printArray();
 
     }
 
-    public void setArray() {
+    public int getCOUNT() {
+        return COUNT;
+    }
+
+    public void setArray(int[] arr) {
+        this.arr = arr;
+    }
+
+    public void setArrayRandom() {
         this.arr = new int[COUNT];
         Random random = new Random();
         for (int i=0; i<COUNT; i++){
-            arr[i] = random.nextInt(100);
+            arr[i] = random.nextInt(200);
         }
     }
 
@@ -32,5 +40,6 @@ public class ArrayForExercises {
     public int[] getArray() {
         return arr;
     }
+
 }
 
