@@ -14,14 +14,21 @@ public class Exercise_2_3 {
         this.arr = arr.getArray();
         this.sortByMedium();
     }
+
     private void sortByMedium(){
+        double m;
+        int a =5, b=3, v;
+        v = (int)(a*1.0)/b;
+        m = a/ b;
+        System.out.println(v+"     "+m);
         int count[] = new int[this.arr.length];
         int medium = 0;
         for (int i = 0; i < this.arr.length; i++) {
             count[i]=String.valueOf(Math.abs(this.arr[i])).length();
             medium = medium + count[i];
         }
-        medium = (int)(medium / count.length);
+        medium = (medium / count.length);
+        System.out.println(medium);
         System.out.println("The numbers : ");
         for (int i = 0; i < count.length; i++) {
             if (count[i] <= medium) {
