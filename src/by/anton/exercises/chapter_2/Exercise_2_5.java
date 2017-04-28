@@ -19,7 +19,8 @@ public class Exercise_2_5 {
         int max[] = {matrix[0][0], 0, 0};
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix[0].length; j++) {
-                if (max[0] > matrix[i][j]) {
+//                System.out.print(max[0]+ " ");
+                if (max[0] < matrix[i][j]) {
                     max[0] = matrix[i][j];
                     max[1] = i;
                     max[2] = j;
@@ -29,21 +30,22 @@ public class Exercise_2_5 {
         System.out.println("Max element : " + max[0]+" i: "+max[1]+" j: "+max[2]);
         for (int i = 0; i < matrix.length-1; i++) {
             for (int j = 0; j < matrix[0].length-1; j++) {
-                if (i <max[1] && j <= max[2]) {
+                if (i <max[1] & j >= max[2]) {
                     matrix[i][j] = matrix[i][j + 1];
                     matrix[i][j+1] = 0;
                 }
-                if (i >=max[1] && j <max[2]) {
+                if (i >=max[1] & j <max[2]) {
                         matrix[i][j] = matrix[i + 1][j];
                         matrix[i+1][j] = 0;
                 }
-                if (i >=max[1] && j >= max[2]) {
+                if (i >=max[1] & j >= max[2]) {
                     matrix[i][j] = matrix[i + 1][j+1];
                     matrix[i+1][j+1] = 0;
                 }
             }
         }
-
+        matrix[max[1]][matrix[0].length-1]=0;
+        matrix[matrix.length-1][max[2]]=0;
     return matrix;
     }
 }
