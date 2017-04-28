@@ -11,6 +11,8 @@ public class Exercise_2_1 {
     public Exercise_2_1() {
         System.out.println(TASK);
         ArrayForExercises array = new ArrayForExercises();
+        array.setArrayRandom();
+        array.printArray();
         arr = array.getArray();
         int num, counts;
         num = numberMax();

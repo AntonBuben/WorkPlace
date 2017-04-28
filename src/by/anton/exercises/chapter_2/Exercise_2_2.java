@@ -11,6 +11,8 @@ public class Exercise_2_2 {
     public Exercise_2_2() {
         System.out.println(TASK);
         ArrayForExercises arr = new ArrayForExercises();
+        arr.setArrayRandom();
+        arr.printArray();
         this.arr = arr.getArray();
         arr.setArray(this.sortByCounts());
         arr.printArray();

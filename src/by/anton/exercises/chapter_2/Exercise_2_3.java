@@ -11,6 +11,8 @@ public class Exercise_2_3 {
     public Exercise_2_3() {
         System.out.println(TASK);
         ArrayForExercises arr = new ArrayForExercises();
+        arr.setArrayRandom();
+        arr.printArray();
         this.arr = arr.getArray();
         this.sortByMedium();
     }
