@@ -35,18 +35,6 @@ public class RunExercisesC2 {
             case 6:
                 new Exercise_2_6();
                 break;
-            case 7:
-                new Exercise_2_7();
-                break;
-            case 8:
-                new Exercise_2_8();
-                break;
-            case 9:
-                new Exercise_2_9();
-                break;
-            case 10:
-                new Exercise_2_10();
-                break;
             default:
                 System.out.println("No exercise!");
         }

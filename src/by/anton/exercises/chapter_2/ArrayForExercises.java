@@ -10,7 +10,7 @@ public class ArrayForExercises {
     private int arr[];
     private int matrix[][];
     private final int COUNT = 10;
-    private final int rand = 200;
+    private final int rand = 100;
     public ArrayForExercises() {
     }
 
