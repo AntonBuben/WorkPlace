@@ -30,15 +30,15 @@ public class Exercise_2_5 {
         System.out.println("Max element : " + max[0]+" i: "+max[1]+" j: "+max[2]);
         for (int i = 0; i < matrix.length-1; i++) {
             for (int j = 0; j < matrix[0].length-1; j++) {
-                if (i <max[1] & j >= max[2]) {
+                if (i <max[1] && j >= max[2]) {
                     matrix[i][j] = matrix[i][j + 1];
                     matrix[i][j+1] = 0;
                 }
-                if (i >=max[1] & j <max[2]) {
+                if (i >=max[1] && j <max[2]) {
                         matrix[i][j] = matrix[i + 1][j];
                         matrix[i+1][j] = 0;
                 }
-                if (i >=max[1] & j >= max[2]) {
+                if (i >=max[1] && j >= max[2]) {
                     matrix[i][j] = matrix[i + 1][j+1];
                     matrix[i+1][j+1] = 0;
                 }
