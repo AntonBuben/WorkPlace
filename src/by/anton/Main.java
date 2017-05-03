@@ -3,6 +3,7 @@ package by.anton;
 import by.anton.exercises.Choice;
 import by.anton.exercises.chapter_1.RunExercisesC1;
 import by.anton.exercises.chapter_2.RunExercisesC2;
+import by.anton.exercises.chapter_3.RunExercisesC3;
 
 import java.util.Scanner;
 
@@ -26,7 +27,7 @@ public class Main {
         switch (choice.getChapter()){
                 case 1: new RunExercisesC1(choice); break;
                 case 2: new RunExercisesC2(choice); break;
-//                case 3: new RunExercisesC3(choice); break;
+                case 3: new RunExercisesC3(choice); break;
             }
 
 
