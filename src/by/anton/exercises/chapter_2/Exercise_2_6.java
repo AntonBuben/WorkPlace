@@ -29,9 +29,9 @@ public class Exercise_2_6 {
                         break;
                     }
                 }
-                if (i == matrix.length-1) {
-                    out = true;
-                }
+//                if (i == matrix.length-1) {
+//                    out = true;
+//                }
             }
   //      } while (out == true);
         return matrix;
