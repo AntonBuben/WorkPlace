@@ -8,6 +8,7 @@ public class Exercise_2_4 {
     private int matrix[][];
     
     public Exercise_2_4() {
+        System.out.println(TASK);
         ArrayForExercises matrix = new ArrayForExercises();
         matrix.setMatrixRandom();
         setMatrix(matrix.getMatrix());
