@@ -1,6 +1,6 @@
 package by.anton.exercises.chapter_3.Exercise_3_1;
 
-import java.util.Date;
+import java.util.Random;
 
 /**
  * Created by Buben_AV on 03.05.2017.
@@ -16,16 +16,14 @@ public class Exercise_3_1 {
 
     public Exercise_3_1() {
         System.out.println(TASK);
-        PrintStudent printStudent = new PrintStudent();
+        PrintStudents printStudent = new PrintStudents();
+        Random random = new Random();
         printStudent.createStudents(10);
-        printStudent.printStudentsOfFaculty(faculty.Physics);
-        printStudent.printStudentsOfFacultyAndCourse(faculty.Biology,course.first);
-        printStudent.printStudentsAfterDate(1985);
-        printStudent.printGroup(group.A);
+        printStudent.printStudentsOfFaculty(Data.getFaculty(random.nextInt(4)));
+        printStudent.printStudentsOfFacultyAndCourse(Data.getFaculty(random.nextInt(4)),Data.getCourse(random.nextInt(4)));
+        printStudent.printStudentsAfterDate(Data.getDateOfBirth(random.nextInt(4)));
+        printStudent.printGroup(Data.getGroup(random.nextInt(4)));
     }
-
-
-
 
 
 }

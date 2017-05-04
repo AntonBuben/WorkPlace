@@ -6,13 +6,15 @@ import java.util.Date;
  * Created by Buben_AV on 04.05.2017.
  */
 public class Student {
+
     private int id;
     private String firstName;
     private String lastName;
     private String middleName;
-    private Date dateOfBirth;
+    private int dateOfBirth;
     private String address;
     private String telephone;
+    private University university;
 
     public int getId() {
         return id;
@@ -30,7 +32,7 @@ public class Student {
         return middleName;
     }
 
-    public Date getDateOfBirth() {
+    public int getDateOfBirth() {
         return dateOfBirth;
     }
 
@@ -40,6 +42,10 @@ public class Student {
 
     public String getTelephone() {
         return telephone;
+    }
+
+    public University getUniversity() {
+        return university;
     }
 
     public void setId(int id) {
@@ -58,7 +64,7 @@ public class Student {
         this.middleName = middleName;
     }
 
-    public void setDateOfBirth(Date dateOfBirth) {
+    public void setDateOfBirth(int dateOfBirth) {
         this.dateOfBirth = dateOfBirth;
     }
 
@@ -70,5 +76,7 @@ public class Student {
         this.telephone = telephone;
     }
 
-
+    public void setUniversity(University university) {
+        this.university = university;
+    }
 }
