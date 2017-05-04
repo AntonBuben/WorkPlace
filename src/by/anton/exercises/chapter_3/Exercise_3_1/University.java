@@ -5,9 +5,9 @@ package by.anton.exercises.chapter_3.Exercise_3_1;
  */
 public class University {
 
-    private  String faculty;
-    private  String course;
-    private  String group;
+    private String faculty;
+    private String course;
+    private String group;
 
     public void setFaculty(String faculty) {
         this.faculty = faculty;
@@ -31,6 +31,15 @@ public class University {
 
     public String getGroup() {
         return group;
+    }
+
+    @Override
+    public String toString() {
+        return "{" +
+                "faculty='" + faculty + '\'' +
+                ", course='" + course + '\'' +
+                ", group='" + group + '\'' +
+                '}';
     }
 }
 

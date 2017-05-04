@@ -19,8 +19,9 @@ public class Exercise_3_1 {
         PrintStudents printStudent = new PrintStudents();
         Random random = new Random();
         printStudent.createStudents(10);
+        printStudent.printStudents();
         printStudent.printStudentsOfFaculty(Data.getFaculty(random.nextInt(4)));
-        printStudent.printStudentsOfFacultyAndCourse(Data.getFaculty(random.nextInt(4)),Data.getCourse(random.nextInt(4)));
+        printStudent.printStudentsOfFacultyAndCourse(Data.getFaculty(random.nextInt(4)), Data.getCourse(random.nextInt(4)));
         printStudent.printStudentsAfterDate(Data.getDateOfBirth(random.nextInt(4)));
         printStudent.printGroup(Data.getGroup(random.nextInt(4)));
     }

@@ -24,7 +24,7 @@ public class Choice {
     public void setChapter() {
         System.out.println("Enter a chapter (1-10):");
 //        Scanner scan = new Scanner(System.in);
-        int chapter = 2; //scan.nextInt();
+        int chapter = 3; //scan.nextInt();
         if (chapter > 0 | chapter <10) {
             this.chapter = chapter;
         } else {

@@ -79,4 +79,18 @@ public class Student {
     public void setUniversity(University university) {
         this.university = university;
     }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "id=" + id +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", middleName='" + middleName + '\'' +
+                ", dateOfBirth=" + dateOfBirth +
+                ", address='" + address + '\'' +
+                ", telephone='" + telephone + '\'' +
+                ", university=" + university +
+                '}';
+    }
 }
