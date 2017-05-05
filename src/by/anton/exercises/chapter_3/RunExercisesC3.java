@@ -2,6 +2,7 @@ package by.anton.exercises.chapter_3;
 
 import by.anton.exercises.Choice;
 import by.anton.exercises.chapter_3.Exercise_3_1.Exercise_3_1;
+import by.anton.exercises.chapter_3.Exercise_3_2.Exercise_3_2;
 
 /**
  * Created by Buben_AV on 03.05.2017.
@@ -28,18 +29,6 @@ public class RunExercisesC3 {
                 break;
             case 2:
                 new Exercise_3_2();
-                break;
-            case 3:
-                new Exercise_3_3();
-                break;
-            case 4:
-                new Exercise_3_4();
-                break;
-            case 5:
-                new Exercise_3_5();
-                break;
-            case 6:
-                new Exercise_3_6();
                 break;
             default:
                 System.out.println("No exercise!");
