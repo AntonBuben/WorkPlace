@@ -23,30 +23,37 @@ public class Exercise_3_2 {
         Sorting sorting = new  Sorting();
         //The sorting by bubble sort
         mas.setRandomArray(LENGTH);
+        mas.printArray();
         sorting.bubbleSort(mas.getArray());
         mas.printArray();
         //The sorting by cocktail sort
         mas.setRandomArray(LENGTH);
+        mas.printArray();
         sorting.cocktailSort(mas.getArray());
         mas.printArray();
         //The sorting by selection sort
         mas.setRandomArray(LENGTH);
+        mas.printArray();
         sorting.selectionSort(mas.getArray());
         mas.printArray();
         //The sorting by hashing sort
         mas.setRandomArray(LENGTH);
+        mas.printArray();
         sorting.hashingSort(mas.getArray());
         mas.printArray();
         //The sorting by insertion sort
         mas.setRandomArray(LENGTH);
+        mas.printArray();
         sorting.insertionSort(mas.getArray());
         mas.printArray();
         //The sorting by merge sort
         mas.setRandomArray(LENGTH);
+        mas.printArray();
         sorting.mergeSort(mas.getArray());
         mas.printArray();
         //The sorting by shell sort
         mas.setRandomArray(LENGTH);
+        mas.printArray();
         sorting.shellSort(mas.getArray());
         mas.printArray();
     }

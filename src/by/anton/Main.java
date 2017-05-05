@@ -3,9 +3,7 @@ package by.anton;
 import by.anton.exercises.Choice;
 import by.anton.exercises.chapter_1.RunExercisesC1;
 import by.anton.exercises.chapter_2.RunExercisesC2;
-import by.anton.exercises.chapter_3.RunExercisesC3;
-
-import java.util.Scanner;
+import by.anton.exercises.chapter_3.Exercise_3_2.RunExercisesC3;
 
 /**
  * Created by Buben_AV on 22.03.2017.
