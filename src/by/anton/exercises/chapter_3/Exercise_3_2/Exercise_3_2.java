@@ -36,11 +36,6 @@ public class Exercise_3_2 {
         mas.printArray();
         sorting.selectionSort(mas.getArray());
         mas.printArray();
-        //The sorting by hashing sort
-        mas.setRandomArray(LENGTH);
-        mas.printArray();
-        sorting.hashingSort(mas.getArray());
-        mas.printArray();
         //The sorting by insertion sort
         mas.setRandomArray(LENGTH);
         mas.printArray();
