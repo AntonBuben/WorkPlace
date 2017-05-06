@@ -36,17 +36,16 @@ public class Sorting {
                 right--;
                 itr++;
             }
-            for (int j = right; j > left; j--) {
-                if (array[j] < array[j - 1]) {
-                    swapNumbers(array, j, j + 1);
+            for (int i = right; i > left + 1; i--) {
+                if (array[i] < array[i - 1]) {
+                    swapNumbers(array, i, i + 1);
                 }
-                left--;
+                left++;
                 itr++;
             }
         } while (left < right);
         System.out.println("The sorting is done! Iterations are : " + itr);
     }
-
 
     public void selectionSort(int array[]) {
         int itr = 0;
