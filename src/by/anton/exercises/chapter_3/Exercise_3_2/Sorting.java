@@ -4,34 +4,49 @@ package by.anton.exercises.chapter_3.Exercise_3_2;
  * Created by Buben_AV on 05.05.2017.
  */
 public class Sorting {
+    private void swapNumbers(int array[], int pos1, int pos2) {
+        int temp;
+        temp = array[pos1];
+        array[pos1] = array[pos2];
+        array[pos2] = temp;
+    }
+
     public void bubbleSort(int array[]) {
         int temp, itr = 0;
-        for (int i = 0; i < array.length-1; i++) {
-            for (int j = 0; j < array.length-1 - i; j++) {
+        for (int i = 0; i < array.length - 1; i++) {
+            for (int j = 0; j < array.length - 1 - i; j++) {
                 if (array[j] > array[j + 1]) {
-                    temp = array[j];
-                    array[j] = array [j+1];
-                    array[j+1] = temp;
+                    swapNumbers(array, j, j + 1);
                 }
                 itr++;
             }
         }
         System.out.println("The sorting is done! Iterations are : " + itr);
     }
+
     public void cocktailSort(int array[]) {
-        int itr = 0;
-        for (int i = 0; i < array.length-1; i++) {
-            for (int j = 0; j < array.length-1 - i; j++) {
-                if (array[j] > array[j + 1]) {
-                    temp = array[j];
-                    array[j] = array [j+1];
-                    array[j+1] = temp;
+        int temp, itr = 0;
+        int left = 0;
+        int right = array.length - 1;
+        do {
+            for (int i = left; i < right; i++) {
+                if (array[i] > array[i + 1]) {
+                    swapNumbers(array, i, i + 1);
                 }
+                right--;
                 itr++;
             }
-
+            for (int j = right; j > left; j--) {
+                if (array[j] < array[j - 1]) {
+                    swapNumbers(array, j, j + 1);
+                }
+                left--;
+                itr++;
+            }
+        } while (left < right);
         System.out.println("The sorting is done! Iterations are : " + itr);
     }
+
 
     public void selectionSort(int array[]) {
         int itr = 0;
