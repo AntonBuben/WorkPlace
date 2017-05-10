@@ -3,6 +3,8 @@ package by.anton.exercises.chapter_3.Exercise_3_2;
 /**
  * Created by Buben_AV on 05.05.2017.
  */
+
+//
 public class Sorting {
     private void swapNumbers(int array[], int pos1, int pos2) {
         int temp;
@@ -77,20 +79,25 @@ public class Sorting {
                 itr++;
             }
         }
-        System.out.println("The sorting is done! The iterations are : " + itr+ " Swap is : " + itr);
-    }
-
-    public void mergeSort(int array[]) {
-        int itr = 0;
-
-
-        System.out.println("The sorting is done! The iterations are : " + itr);
+        System.out.println("The sorting is done! The iterations are : " + itr + " Swap is : " + itr);
     }
 
     public void shellSort(int array[]) {
-        int itr = 0;
-
-
+          int itr = 0;
+//        int temp,k,j,i;
+//        for (i = array.length / 2; i > 0; i /= 2) {
+//            for (j = i; j < array.length; j++) {
+//                temp = array[j];
+//                for (k = j; j >= i; k -= i) {
+//                    if (temp < array[k - i]) {
+//                        array[k] = array[k - i];
+//                    } else
+//                        break;
+//                }
+//                array[k]=temp;
+//            }
+//
+//        }
         System.out.println("The sorting is done! The iterations are : " + itr);
     }
 }

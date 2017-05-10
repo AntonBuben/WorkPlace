@@ -11,9 +11,7 @@ public class Exercise_3_2 {
             "обменная сортировка (метод пузырька); \n" +
             "обменная сортировка «Шейкер-сортировка»,-\n" +
             "сортировка посредством выбора (метод простого выбора), \n" +
-            "сортировка вставками: метод хеширования (сортировка с вычислением адреса), \n" +
             "сортировка вставками (метод простых вставок), \n" +
-            "сортировка бинарного слияния, \n" +
             "сортровка Шелла (сортировка с убывающим шагом).";
     private final int LENGTH = 20;
 
@@ -40,11 +38,6 @@ public class Exercise_3_2 {
         mas.setRandomArray(LENGTH);
         mas.printArray();
         sorting.insertionSort(mas.getArray());
-        mas.printArray();
-        //The sorting by merge sort
-        mas.setRandomArray(LENGTH);
-        mas.printArray();
-        sorting.mergeSort(mas.getArray());
         mas.printArray();
         //The sorting by shell sort
         mas.setRandomArray(LENGTH);
