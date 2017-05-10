@@ -30,6 +30,10 @@ public class RunExercisesC3 {
             case 2:
                 new Exercise_3_2();
                 break;
+            case 3:
+                new Exercise_3_3();
+                break;
+
             default:
                 System.out.println("No exercise!");
         }

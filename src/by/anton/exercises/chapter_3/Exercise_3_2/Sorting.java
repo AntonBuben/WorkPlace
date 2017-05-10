@@ -4,8 +4,16 @@ package by.anton.exercises.chapter_3.Exercise_3_2;
  * Created by Buben_AV on 05.05.2017.
  */
 
-//
+/**
+ * Sorting class uses for sorting by different methods
+ */
 public class Sorting {
+    /**
+     * This is a method to swap the elements of the array
+     * @param array for swap
+     * @param pos1 position #1
+     * @param pos2 position #2
+     */
     private void swapNumbers(int array[], int pos1, int pos2) {
         int temp;
         temp = array[pos1];
@@ -13,6 +21,10 @@ public class Sorting {
         array[pos2] = temp;
     }
 
+    /**
+     * This is a method to sort by Bubble
+     * @param array for sorting
+     */
     public void bubbleSort(int array[]) {
         int itr = 0;
         int swap = 0;
@@ -27,6 +39,11 @@ public class Sorting {
         }
         System.out.println("The sorting is done! Iterations are : " + itr + " Swap is : " + swap);
     }
+
+    /**
+     * This is a method to sort by Cocktail
+     * @param array for sorting
+     */
 
     public void cocktailSort(int array[]) {
         int itr = 0;
@@ -53,6 +70,11 @@ public class Sorting {
         System.out.println("The sorting is done! Iterations are : " + itr + " Swap is : " + swap);
     }
 
+    /**
+     * This is a method to sort by Selection
+     * @param array for sorting
+     */
+
     public void selectionSort(int array[]) {
         int itr = 0;
         int swap = 0;
@@ -71,6 +93,11 @@ public class Sorting {
         System.out.println("The sorting is done! The iterations are : " + itr + " Swap is : " + swap);
     }
 
+    /**
+     * This is a method to sort by Insertion
+     * @param array
+     */
+
     public void insertionSort(int array[]) {
         int itr = 0;
         for (int i = 1; i < array.length; i++) {
@@ -81,6 +108,11 @@ public class Sorting {
         }
         System.out.println("The sorting is done! The iterations are : " + itr + " Swap is : " + itr);
     }
+
+    /**
+     * This is a method to sort by Shell
+     * @param array for sorting
+     */
 
     public void shellSort(int array[]) {
           int itr = 0;

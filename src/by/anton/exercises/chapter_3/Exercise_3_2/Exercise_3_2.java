@@ -7,18 +7,27 @@ import java.lang.reflect.Array;
  */
 
 public class Exercise_3_2 {
+    /**
+     * Task for the exercise 3_2
+     */
     private String TASK = "Определить класс Массив. Создать методы сортировки: \n" +
             "обменная сортировка (метод пузырька); \n" +
             "обменная сортировка «Шейкер-сортировка»,-\n" +
             "сортировка посредством выбора (метод простого выбора), \n" +
             "сортировка вставками (метод простых вставок), \n" +
             "сортровка Шелла (сортировка с убывающим шагом).";
+    /**
+     * Length of the array
+     */
     private final int LENGTH = 20;
 
+    /**
+     * This is a constructor to run the exercise 3_2
+     */
     public Exercise_3_2() {
         System.out.println(TASK);
         ArrayForSorting mas = new ArrayForSorting();
-        Sorting sorting = new  Sorting();
+        Sorting sorting = new Sorting();
         //The sorting by bubble sort
         mas.setRandomArray(LENGTH);
         mas.printArray();

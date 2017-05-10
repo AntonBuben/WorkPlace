@@ -8,10 +8,14 @@ import by.anton.exercises.chapter_3.RunExercisesC3;
 /**
  * Created by Buben_AV on 22.03.2017.
  */
+
+/**
+ * Main class uses for run all exercises of all chapters
+ */
 public class Main {
 
     public static void main(String[] args) {
-	// do exercises
+        // do exercises
         Choice choice = new Choice();
 //        Class runEx = null;
 //        try {
@@ -22,13 +26,19 @@ public class Main {
 //        }
 //        ref.setExercise(choice);
 
-        switch (choice.getChapter()){
-                case 1: new RunExercisesC1(choice); break;
-                case 2: new RunExercisesC2(choice); break;
-                case 3: new RunExercisesC3(choice); break;
-            }
+        switch (choice.getChapter()) {
+            case 1:
+                new RunExercisesC1(choice);
+                break;
+            case 2:
+                new RunExercisesC2(choice);
+                break;
+            case 3:
+                new RunExercisesC3(choice);
+                break;
+        }
 
 
-     //PS String urlInfo = "${info}";
+        //PS String urlInfo = "${info}";
     }
 }
