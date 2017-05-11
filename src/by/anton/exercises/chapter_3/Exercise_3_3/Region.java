@@ -6,7 +6,15 @@ import java.util.Arrays;
  * Created by Buben_AV on 11.05.2017.
  */
 public class Region extends BaseArea {
+    /**
+     * districts of a region
+     */
     private District district[];
+
+    /**
+     * To set the districts of a region
+     * @param district
+     */
 
     public void setDistricts(District... district) {
         if (district.length != 0) {

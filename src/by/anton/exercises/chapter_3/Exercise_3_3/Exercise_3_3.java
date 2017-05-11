@@ -5,11 +5,11 @@ package by.anton.exercises.chapter_3.Exercise_3_3;
  */
 
 /**
- *
+ * Class Exercise_3_3 runs the exercise 3.3
  */
 public class Exercise_3_3 {
     /**
-     * Task for the exercise 3_2
+     * Task for the exercise 3_3
      */
     private final String TASK = "Создать приложение, удовлетворяющее требованиям, приведенным в зада-\n" +
             "нии. Наследование применять только в тех заданиях, в которых это логически\n" +
@@ -26,5 +26,4 @@ public class Exercise_3_3 {
         CountryReport countryReport = new CountryReport();
         countryReport.printCountry(countryReport.createCountry());
     }
-
 }

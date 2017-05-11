@@ -1,24 +1,44 @@
 package by.anton.exercises.chapter_3.Exercise_3_3;
 
-import sun.plugin.javascript.navig.Array;
-
 import java.util.Arrays;
 
 /**
  * Created by Buben_AV on 11.05.2017.
  */
+
 public class Country extends BaseArea {
+    /**
+     * capital of a country
+     */
     private City capital;
+    /**
+     * regions of a country
+     */
     private Region region[];
 
+    /**
+     * To set a capital of a country
+     *
+     * @param capital of a country
+     */
     public void setCapital(String capital) {
         this.capital = new City(capital);
     }
 
+    /**
+     * To get a capital of a country
+     *
+     * @return name of a capital
+     */
     public String getCapital() {
         return capital.getName();
     }
 
+    /**
+     * To set regions of a country
+     *
+     * @param region
+     */
     public void setRegions(String... region) {
         if (region.length != 0) {
             this.region = new Region[region.length];
@@ -31,10 +51,21 @@ public class Country extends BaseArea {
         }
     }
 
+    /**
+     * To get regions of a country
+     *
+     * @return region
+     */
     public Region[] getRegion() {
         return region;
     }
 
+    /**
+     * To set districts for the region
+     *
+     * @param region   of a country
+     * @param district of the region
+     */
     public void setDistrictsForRegion(String region, District... district) {
         if (region != null && district.length != 0 && this.region.length != 0)
             for (int i = 0; i < this.region.length; i++) {
@@ -51,7 +82,7 @@ public class Country extends BaseArea {
                 " Name=" + name +
                 ", Square=" + square +
                 ", Capital=" + capital.getName() +
-                "}\n"+
+                "}\n" +
                 Arrays.toString(region);
     }
 }
