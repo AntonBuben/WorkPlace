@@ -95,7 +95,7 @@ public class Sorting {
 
     /**
      * This is a method to sort by Insertion
-     * @param array
+     * @param array for sorting
      */
 
     public void insertionSort(int array[]) {

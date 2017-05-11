@@ -3,6 +3,7 @@ package by.anton.exercises.chapter_3;
 import by.anton.exercises.Choice;
 import by.anton.exercises.chapter_3.Exercise_3_1.Exercise_3_1;
 import by.anton.exercises.chapter_3.Exercise_3_2.Exercise_3_2;
+import by.anton.exercises.chapter_3.Exercise_3_3.Exercise_3_3;
 
 /**
  * Created by Buben_AV on 03.05.2017.
