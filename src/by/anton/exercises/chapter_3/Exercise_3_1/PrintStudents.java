@@ -17,7 +17,7 @@ public class PrintStudents {
             student.setFirstName(Data.getFirstName(random.nextInt(4)));
             student.setLastName(Data.getLastName(random.nextInt(4)));
             student.setMiddleName(Data.getMiddleName(random.nextInt(4)));
-            student.setDateOfBirth(Data.getDateOfBirth(random.nextInt(4)));
+            student.setYearOfBirth(Data.getDateOfBirth(random.nextInt(4)));
             student.setAddress(Data.getAddress(random.nextInt(4)));
             student.setTelephone(Data.getTelephone(random.nextInt(4)));
             University university = new University();
@@ -65,7 +65,7 @@ public class PrintStudents {
     public void printStudentsAfterDate(int dateOfBirth) {
         System.out.println("The students are after " + dateOfBirth + " : ");
         for (int i = 0; i < students.length; i++) {
-            if (students[i].getDateOfBirth() >= dateOfBirth) {
+            if (students[i].getYearOfBirth() >= dateOfBirth) {
                 printStudent(i);
             }
         }

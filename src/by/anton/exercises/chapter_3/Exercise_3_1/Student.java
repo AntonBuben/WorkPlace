@@ -1,7 +1,5 @@
 package by.anton.exercises.chapter_3.Exercise_3_1;
 
-import java.util.Date;
-
 /**
  * Created by Buben_AV on 04.05.2017.
  */
@@ -11,7 +9,7 @@ public class Student {
     private String firstName;
     private String lastName;
     private String middleName;
-    private int dateOfBirth;
+    private int yearOfBirth;
     private String address;
     private String telephone;
     private University university;
@@ -32,8 +30,8 @@ public class Student {
         return middleName;
     }
 
-    public int getDateOfBirth() {
-        return dateOfBirth;
+    public int getYearOfBirth() {
+        return yearOfBirth;
     }
 
     public String getAddress() {
@@ -64,8 +62,8 @@ public class Student {
         this.middleName = middleName;
     }
 
-    public void setDateOfBirth(int dateOfBirth) {
-        this.dateOfBirth = dateOfBirth;
+    public void setYearOfBirth(int yearOfBirth) {
+        this.yearOfBirth = yearOfBirth;
     }
 
     public void setAddress(String address) {
@@ -87,7 +85,7 @@ public class Student {
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", middleName='" + middleName + '\'' +
-                ", dateOfBirth=" + dateOfBirth +
+                ", yearOfBirth=" + yearOfBirth +
                 ", address='" + address + '\'' +
                 ", telephone='" + telephone + '\'' +
                 ", university=" + university +
