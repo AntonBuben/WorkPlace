@@ -1,15 +1,12 @@
-package by.anton.exercises.chapter_3.Exercise_3_3;
+package by.anton.exercises.chapter_4.Exercise_4_2;
 
 /**
- * Created by Anton on 10.05.2017.
+ * Created by Buben_AV on 16.05.2017.
+ *
  */
-
-/**
- * Class Exercise_3_3 runs the exercise 3.3
- */
-public class Exercise_3_3 {
+public class Exercise_4_2 {
     /**
-     * Task for the exercise 3_3
+     * Task for the exercise 4_2
      */
     private final String TASK = "Создать приложение, удовлетворяющее требованиям, приведенным в зада-\n" +
             "нии. Наследование применять только в тех заданиях, в которых это логически\n" +
@@ -20,10 +17,9 @@ public class Exercise_3_3 {
             "Город. Методы: вывести на консоль столицу, количество областей, площадь, областные центры.";
 
     /**
-     * This is a constructor to run the exercise 3_3
+     * This is a constructor to run the exercise 4_2
      */
-    public Exercise_3_3() {
-        CountryReport countryReport = new CountryReport();
-        countryReport.printCountry(countryReport.createCountry());
+    public Exercise_4_2() {
+
     }
 }

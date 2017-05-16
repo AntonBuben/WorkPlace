@@ -5,6 +5,10 @@ import by.anton.exercises.Choice;
 /**
  * Created by Anton on 22.04.2017.
  */
+
+/**
+ * DATA TYPES AND OPERATORS
+ */
 public class RunExercisesC2 {
     private int chapter, exercise;
     public RunExercisesC2(Choice choice) {

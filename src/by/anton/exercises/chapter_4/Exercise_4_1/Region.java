@@ -1,4 +1,4 @@
-package by.anton.exercises.chapter_3.Exercise_3_3;
+package by.anton.exercises.chapter_4.Exercise_4_1;
 
 import java.util.Arrays;
 
@@ -33,5 +33,21 @@ public class Region extends BaseArea {
                 " Name=" + name +
                 ", District=" + Arrays.toString(district) +
                 "}";
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Region region = (Region) o;
+
+        // Probably incorrect - comparing Object[] arrays with Arrays.equals
+        return Arrays.equals(district, region.district);
+    }
+
+    @Override
+    public int hashCode() {
+        return Arrays.hashCode(district);
     }
 }

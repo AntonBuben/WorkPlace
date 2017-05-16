@@ -1,4 +1,4 @@
-package by.anton.exercises.chapter_3.Exercise_3_3;
+package by.anton.exercises.chapter_4.Exercise_4_1;
 
 /**
  * Created by Buben_AV on 11.05.2017.
@@ -48,5 +48,20 @@ public class District extends BaseArea{
                 " Name=" + name  +
                 ", City=" + city.toString() +
                 "}";
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        District district = (District) o;
+
+        return city != null ? city.equals(district.city) : district.city == null;
+    }
+
+    @Override
+    public int hashCode() {
+        return city != null ? city.hashCode() : 0;
     }
 }

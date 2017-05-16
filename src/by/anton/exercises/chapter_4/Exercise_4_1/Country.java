@@ -1,4 +1,4 @@
-package by.anton.exercises.chapter_3.Exercise_3_3;
+package by.anton.exercises.chapter_4.Exercise_4_1;
 
 import java.util.Arrays;
 
@@ -84,5 +84,24 @@ public class Country extends BaseArea {
                 ", Capital=" + capital.getName() +
                 "}\n" +
                 Arrays.toString(region);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Country country = (Country) o;
+
+        if (capital != null ? !capital.equals(country.capital) : country.capital != null) return false;
+        // Probably incorrect - comparing Object[] arrays with Arrays.equals
+        return Arrays.equals(region, country.region);
+    }
+
+    @Override
+    public int hashCode() {
+        int result = capital != null ? capital.hashCode() : 0;
+        result = 31 * result + Arrays.hashCode(region);
+        return result;
     }
 }
