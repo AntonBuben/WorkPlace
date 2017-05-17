@@ -28,13 +28,20 @@ public class Main {
 
         switch (choice.getChapter()) {
             case 1:
+                // INTRODUCTION TO OOP AND CLASSES
                 new RunExercisesC1(choice);
                 break;
             case 2:
+                // DATA TYPES AND OPERATORS
                 new RunExercisesC2(choice);
                 break;
             case 3:
+                //CLASSES AND OBJECTS
                 new RunExercisesC3(choice);
+                break;
+            case 4:
+                //CLASSES AND OBJECTS
+                new RunExercisesC4(choice);
                 break;
         }
 
