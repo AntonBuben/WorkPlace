@@ -12,4 +12,31 @@ public abstract class BaseAccount {
     public abstract void setAmount(int amount);
     public abstract int getAmount();
 
+    public BaseAccount(Customer customer) {
+        this.customer = customer;
+    }
+
+    public boolean isBlock() {
+        return block;
+    }
+
+    public void setBlock(boolean block) {
+        this.block = block;
+    }
+
+    public int getAccountNumber() {
+        return accountNumber;
+    }
+
+    public void setAccountNumber(int accountNumber) {
+        this.accountNumber = accountNumber;
+    }
+
+    public Customer getCustomer() {
+        return customer;
+    }
+
+    public void setCustomer(Customer customer) {
+        this.customer = customer;
+    }
 }

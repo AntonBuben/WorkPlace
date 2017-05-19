@@ -1,5 +1,7 @@
 package by.anton.exercises.chapter_4.Exercise_4_2;
 
+import java.util.Random;
+
 /**
  * Created by Buben_AV on 16.05.2017.
  */
@@ -22,22 +24,33 @@ public class Exercise_4_2 {
             "ность блокировки/разблокировки счета. Реализовать поиск и сортировку\n" +
             "счетов. Вычисление общей суммы по счетам. Вычисление суммы по всем\n" +
             "счетам, имеющим положительный и отрицательный балансы отдельно.";
+    private String firstNames[] = {"Vanja", "Kolja", "Sergey", "Egor", "Maksim"};
+    private String secondNames[] = {"Ivanov", "Petrov", "Sidorov", "Bogin", "Vasjkin"};
+    private final int MAX_CLIENTS = 10;
+    private final int MAX_ACCOUNTS = 5;
 
     /**
      * This is a constructor to run the exercise 4_2
      */
     public Exercise_4_2() {
-        Customer customer = new Customer();
-        CreditAccount creditAccount = new CreditAccount(customer);
-        DebitAccount debitAccount = new DebitAccount(customer);
-        Bank bank = new Bank();
-        bank.openAccount(creditAccount);
+        Bank bank = new Bank("Belarus");
+        Customer customer = null;
+        Random random = new Random();
+//        CreditAccount creditAccount = null;
+//        DebitAccount debitAccount = null;
+        for (int i = 0; i < MAX_CLIENTS; i++) {
+            customer = new Customer(firstNames[random.nextInt(firstNames.length)], secondNames[random.nextInt(secondNames.length)]);
+            for (int j = 0; j < random.nextInt(MAX_ACCOUNTS); j++) {
+                bank.openCreditAccount(customer);
+                bank.openDebitAccount(customer);
+            }
+        }
+
         bank.closeAccount(creditAccount);
-        bank.openAccount(debitAccount);
         bank.blockAccount(debitAccount);
         bank.unBlockAccount(debitAccount);
         bank.sortAccountsByName();
-        bank.searchAccountByName(customer.getName);
+        bank.searchAccountByName(customer.getFirstName());
         bank.sumCreditAccounts();
         bank.sumDebitAccounts();
     }
