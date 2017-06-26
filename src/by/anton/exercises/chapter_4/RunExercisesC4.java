@@ -4,7 +4,7 @@ import by.anton.exercises.Choice;
 import by.anton.exercises.chapter_3.Exercise_3_1.Exercise_3_1;
 import by.anton.exercises.chapter_3.Exercise_3_2.Exercise_3_2;
 import by.anton.exercises.chapter_4.Exercise_4_1.Exercise_4_1;
-import by.anton.exercises.chapter_4.Exercise_4_2.Exercise_4_2;
+//import by.anton.exercises.chapter_4.Exercise_4_2.Exercise_4_2;
 
 /**
  * Created by Buben_AV on 03.05.2017.
@@ -34,9 +34,8 @@ public class RunExercisesC4 {
                 new Exercise_4_1();
                 break;
             case 2:
-                new Exercise_4_2();
+//                new Exercise_4_2();
                 break;
-
             default:
                 System.out.println("No exercise!");
         }

@@ -10,21 +10,33 @@ import by.anton.exercises.Choice;
  * INTRODUCTION TO OOP AND CLASSES
  */
 public class RunExercisesC1 {
+    /**
+     * a chapter and an exercise
+     */
     private int chapter, exercise;
 
+    /**
+     * To run exercises of chapter 1
+     * @param choice
+     */
     public RunExercisesC1(Choice choice) {
         this.setExercises(choice);
         this.runExercises();
     }
 
+    /**
+     * To set a chapter and an exercise.
+     * @param choice
+     */
     private void setExercises(Choice choice) {
-        //Set the chapter and the exercise.
         this.chapter = choice.getChapter();
         this.exercise = choice.getExercise();
     }
 
+    /**
+     * To run exercises
+     */
     private void runExercises() {
-        //Run exercise 1-6 from Chapter 1
         switch (this.exercise) {
             case 1:
                 new Exercise_1_1();
@@ -47,6 +59,6 @@ public class RunExercisesC1 {
             default:
                 System.out.println("No exercise!");
         }
-        System.out.println("Chapter" + this.chapter + "done!");
+        System.out.println("Exercise " +this.chapter+"_"+ this.exercise + " done!");
     }
 }

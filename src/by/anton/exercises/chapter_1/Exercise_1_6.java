@@ -6,14 +6,16 @@ import java.util.Scanner;
 /**
  * Created by Buben_AV on 22.03.2017.
  */
+/**
+ * Exercise 6 of chapter 1
+ */
 public class Exercise_1_6 {
     private final String TASK = "#6 Вывести фамилию разработчика, дату и время получения задания, а также\n" +
             "дату и время сдачи задания.";
     private String fio;
     private Date dateOfTask;
     private Date dateOfFinish;
-
-
+    
     public Exercise_1_6() {
         System.out.println(TASK);
         this.getFIO();

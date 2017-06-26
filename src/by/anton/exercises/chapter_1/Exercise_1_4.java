@@ -5,23 +5,26 @@ import java.util.Scanner;
 /**
  * Created by Buben_AV on 22.03.2017.
  */
+/**
+ * Exercise 4 of chapter 1
+ */
 public class Exercise_1_4 {
     private final String TASK = "#4 Ввести пароль из командной строки и сравнить его со строкой-образцом.";
     private String password;
     private final String PASSWORD = "da";
 
     public Exercise_1_4() {
-        this.setName();
-        this.getName();
+        this.enterPassword();
+        this.checkPassword();
     }
 
-    public void setName() {
-        System.out.println("Enter password: ");
+    public void enterPassword() {
+        System.out.println("Enter password (da): ");
         Scanner scan = new Scanner(System.in);
         this.password = scan.next();
     }
 
-    public void getName() {
+    public void checkPassword() {
         if (this.password.equals(PASSWORD)) {
             System.out.println("Password is true: " + this.password + "!");
         } else {

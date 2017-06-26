@@ -16,7 +16,7 @@ public class Main {
 
     public static void main(String[] args) {
         // do exercises
-        Choice choice = new Choice();
+        Choice choice = new Choice(1);
 //        Class runEx = null;
 //        try {
 //            runEx = Class.forName("RunExercisesC"+choice.getChapter());
@@ -40,8 +40,12 @@ public class Main {
                 new RunExercisesC3(choice);
                 break;
             case 4:
-                //CLASSES AND OBJECTS
-                new RunExercisesC4(choice);
+                //INHERITANCE AND POLYMORPHISM
+//                new RunExercisesC4(choice);
+                break;
+            case 5:
+                //INNER CLASSES
+//                new RunExercisesC5(choice);
                 break;
         }
 
