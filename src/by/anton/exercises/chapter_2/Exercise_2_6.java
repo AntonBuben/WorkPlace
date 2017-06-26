@@ -3,6 +3,9 @@ package by.anton.exercises.chapter_2;
 /**
  * Created by Buben_AV on 22.03.2017.
  */
+/**
+ * Exercise 6 of chapter 2
+ */
 public class Exercise_2_6 {
     private final String TASK = "#6 Уплотнить матрицу, удаляя из нее строки и столбцы, заполненные нулями.";
 

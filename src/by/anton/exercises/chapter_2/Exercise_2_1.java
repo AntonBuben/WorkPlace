@@ -3,6 +3,9 @@ package by.anton.exercises.chapter_2;
 /**
  * Created by Buben_AV on 22.03.2017.
  */
+/**
+ * Exercise 1 of chapter 2
+ */
 public class Exercise_2_1 {
     private final String TASK = "#1 Найти самое короткое и самое длинное число. Вывести найденные числа\n" +
             "и их длину.";

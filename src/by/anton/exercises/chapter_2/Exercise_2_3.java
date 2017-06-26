@@ -3,6 +3,9 @@ package by.anton.exercises.chapter_2;
 /**
  * Created by Buben_AV on 22.03.2017.
  */
+/**
+ * Exercise 3 of chapter 2
+ */
 public class Exercise_2_3 {
     private final String TASK = "#3 Вывести на консоль те числа, длина которых меньше (больше) средней,\n" +
             "а также длину.";

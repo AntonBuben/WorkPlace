@@ -3,6 +3,9 @@ package by.anton.exercises.chapter_2;
 /**
  * Created by Buben_AV on 22.03.2017.
  */
+/**
+ * Exercise 4 of chapter 2
+ */
 public class Exercise_2_4 {
     private final String TASK = "#4 Вывести числа от 1 до k в виде матрицы N x N слева направо и сверху вниз.";
     private int matrix[][];

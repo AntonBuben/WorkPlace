@@ -42,6 +42,6 @@ public class RunExercisesC2 {
             default:
                 System.out.println("No exercise!");
         }
-        System.out.println("Chapter " + this.chapter + " done!");
+        System.out.println("Exercise " +this.chapter+"_"+ this.exercise + " done!");
     }
 }
