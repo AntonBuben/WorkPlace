@@ -23,7 +23,7 @@ public class Exercise_2_1 {
         System.out.println("Number max :"+num+" Counts : "+counts);
         num = numberMin();
         counts = getCountsOfDigits(num);
-        System.out.println("Number max :"+num+" Counts : "+counts);
+        System.out.println("Number min :"+num+" Counts : "+counts);
 
     }
     public int numberMax(){
