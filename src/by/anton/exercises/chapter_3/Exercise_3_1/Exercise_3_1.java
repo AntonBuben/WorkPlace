@@ -14,7 +14,7 @@ public class Exercise_3_1 {
             "c) список студентов, родившихся после заданного года;\n" +
             "d) список учебной группы.";
 
-    public Exercise_3_1() {
+    public void doExercise_3_1(){
         System.out.println(TASK);
         PrintStudents printStudent = new PrintStudents();
         Random random = new Random();

@@ -29,15 +29,17 @@ public class RunExercisesC3 {
         //Run exercise 1-6 from Chapter 1
         switch (this.exercise) {
             case 1:
-                new Exercise_3_1();
+                Exercise_3_1 exe1 = new Exercise_3_1();
+                exe1.doExercise_3_1();
                 break;
             case 2:
-                new Exercise_3_2();
+                Exercise_3_2 exe2 = new Exercise_3_2();
+                exe2.doExercise_3_2();
                 break;
 
             default:
                 System.out.println("No exercise!");
         }
-        System.out.println("Chapter " + this.chapter + " done!");
+        System.out.println("Exercise " +this.chapter+"_"+ this.exercise + " done!");
     }
 }

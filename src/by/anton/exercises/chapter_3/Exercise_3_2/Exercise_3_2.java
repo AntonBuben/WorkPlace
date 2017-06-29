@@ -24,7 +24,7 @@ public class Exercise_3_2 {
     /**
      * This is a constructor to run the exercise 3_2
      */
-    public Exercise_3_2() {
+    public void doExercise_3_2() {
         System.out.println(TASK);
         ArrayForSorting mas = new ArrayForSorting();
         Sorting sorting = new Sorting();
