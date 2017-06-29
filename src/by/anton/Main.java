@@ -4,6 +4,7 @@ import by.anton.exercises.Choice;
 import by.anton.exercises.chapter_1.RunExercisesC1;
 import by.anton.exercises.chapter_2.RunExercisesC2;
 import by.anton.exercises.chapter_3.RunExercisesC3;
+import by.anton.exercises.chapter_4.RunExercisesC4;
 
 /**
  * Created by Buben_AV on 22.03.2017.
@@ -16,7 +17,7 @@ public class Main {
 
     public static void main(String[] args) {
         // do exercises
-        Choice choice = new Choice(2);
+        Choice choice = new Choice();
 //        Class runEx = null;
 //        try {
 //            runEx = Class.forName("RunExercisesC"+choice.getChapter());
@@ -41,7 +42,7 @@ public class Main {
                 break;
             case 4:
                 //INHERITANCE AND POLYMORPHISM
-//                new RunExercisesC4(choice);
+                new RunExercisesC4(choice);
                 break;
             case 5:
                 //INNER CLASSES

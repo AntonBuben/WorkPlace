@@ -4,16 +4,17 @@ package by.anton.exercises.chapter_4.Exercise_4_2;
  * Created by Buben_AV on 16.05.2017.
  */
 public abstract class BaseAccount {
-    private int accountNumber;
-    private boolean block;
-    private Customer customer;
-    private int amount;
+    protected int accountNumber;
+    protected boolean block;
+    protected Customer customer;
+    protected double amount;
 
-    public abstract void setAmount(int amount);
-    public abstract int getAmount();
+    public abstract void setAmount(double amount);
+    public abstract double getAmount();
 
-    public BaseAccount(Customer customer) {
+    public BaseAccount(Customer customer, int idAccount) {
         this.customer = customer;
+        this.accountNumber = idAccount;
     }
 
     public boolean isBlock() {

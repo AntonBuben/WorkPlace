@@ -21,7 +21,7 @@ public class Exercise_4_1 {
     /**
      * This is a constructor to run exercise 4_1
      */
-    public Exercise_4_1() {
+    public void runExercise_4_1() {
         CountryReport countryReport = new CountryReport();
         countryReport.printCountry(countryReport.createCountry());
     }
