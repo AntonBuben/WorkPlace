@@ -56,7 +56,7 @@ public class Exercise_4_2 {
                 switch (random.nextInt(1)) {
                     case 0:
                         bank.openCreditAccount(customer);
-                        bank.setAmountByAccountNumber(bank.getAccountNumber(customer))
+                        bank.setAmountByAccountNumber(bank.getAccountNumber(customer));
                         break;
                     case 1:
                         bank.openDebitAccount(customer);
