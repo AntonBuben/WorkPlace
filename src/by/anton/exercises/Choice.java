@@ -13,11 +13,22 @@ public class Choice {
     private int chapter, exercise;
 
     /**
-     * This is a constructor to set a chapter and an exercise
+     * This is a constructor to set a chapter and an exercise by class Scanner
      */
+
     public Choice() {
         setChapter();
         setExercise();
+    }
+
+    /**
+     * This is a constructor to set a chapter and an exercise by parameters
+     * @param chapter
+     * @param exercise
+     */
+    public Choice(int chapter, int exercise){
+        setChapter(chapter);
+        setExercise(exercise);
     }
 
     /**
@@ -30,7 +41,7 @@ public class Choice {
     }
 
     /**
-     * To get chapter
+     * To get a chapter
      * @return chapter
      */
     public int getChapter() {
@@ -38,7 +49,7 @@ public class Choice {
     }
 
     /**
-     * To get exercise
+     * To get an exercise
      * @return exercise
      */
     public int getExercise() {
@@ -61,6 +72,14 @@ public class Choice {
     }
 
     /**
+     * To set a chapter
+     * @param chapter
+     */
+    public void setChapter(int chapter) {
+        this.chapter = chapter;
+    }
+
+    /**
      * To set an exercise
      */
     public void setExercise() {
@@ -72,6 +91,14 @@ public class Choice {
         } else {
             System.out.println("The exercise is not correct");
         }
+    }
+
+    /**
+     * To set an exercise
+     * @param exercise
+     */
+    public void setExercise(int exercise) {
+        this.exercise = exercise;
     }
 
     /**

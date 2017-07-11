@@ -17,7 +17,7 @@ public class Main {
 
     public static void main(String[] args) {
         // do exercises
-        Choice choice = new Choice();
+        Choice choice = new Choice(4,2);
 //        Class runEx = null;
 //        try {
 //            runEx = Class.forName("RunExercisesC"+choice.getChapter());

@@ -50,28 +50,37 @@ public class Exercise_4_2 {
         Random random = new Random();
 //        CreditAccount creditAccount = null;
 //        DebitAccount debitAccount = null;
+
+        //To create customers and accounts
         for (int i = 0; i < MAX_CLIENTS; i++) {
             customer = new Customer(firstNames[random.nextInt(firstNames.length)], secondNames[random.nextInt(secondNames.length)]);
-            for (int j = 0; j < random.nextInt(MAX_ACCOUNTS); j++) {
-                switch (random.nextInt(1)) {
-                    case 0:
-                        bank.openCreditAccount(customer);
-                        bank.setAmountByAccountNumber(bank.getAccountNumber(customer));
-                        break;
-                    case 1:
-                        bank.openDebitAccount(customer);
-                        break;
-                }
+//            for (int j = 0; j < random.nextInt(MAX_ACCOUNTS); j++) {
+            switch (random.nextInt(1)) {
+                case 0:
+                    bank.openCreditAccount(customer, random.doubles(Double.MAX_VALUE));
+                    break;
+                case 1:
+                    bank.openDebitAccount(customer);
+                    break;
             }
-
-            bank.closeAccount(creditAccount);
-            bank.blockAccount(debitAccount);
-            bank.unBlockAccount(debitAccount);
-            bank.sortAccountsByName();
-            bank.searchAccountByName(customer.getFirstName());
-            bank.sumCreditAccounts();
-            bank.sumDebitAccounts();
         }
+        bank.printCustomersOfBank();
+        bank.printAccountsOfBank();
+
+        //To set block, amount..
+        for (int i = 0; i < bank.getNumberOfAccounts(); i++) {
+            bank.unBlockAccount(i+1);
+
+        }
+//
+//            bank.closeAccount(creditAccount);
+//            bank.blockAccount(debitAccount);
+//            bank.unBlockAccount(debitAccount);
+//            bank.sortAccountsByName();
+//            bank.searchAccountByName(customer.getFirstName());
+//            bank.sumCreditAccounts();
+//            bank.sumDebitAccounts();
+    }
 
     private void searchAccount(int accountNumber) {
     }
